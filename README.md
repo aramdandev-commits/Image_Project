@@ -7,6 +7,5 @@
 - DARKNESS
 - BRIGHTNESS
 - CONTRAST
-- Log & Invers-log 
-- Negative
-- Power & Root
+- INTENSITY TRANSOFPRMS ( Log & Invers-log || Negative || Power & Root)
+- HISTOGRAM EQUALIZATION
