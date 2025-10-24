@@ -7,3 +7,6 @@
 - DARKNESS
 - BRIGHTNESS
 - CONTRAST
+- Log & Invers-log 
+- Negative
+- Power & Root
