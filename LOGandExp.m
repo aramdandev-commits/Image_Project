@@ -1,4 +1,4 @@
-function [ ] = LOGandExp( image , index )
+function [ ] = LOGandExp( image , index ,c)
 [H, W , L ]=size(image);
 Rgb_image= zeros(H,W,L);
 Gray_image =zeros(H,W);
@@ -7,11 +7,11 @@ image = im2double(image);
      for j=1:W
          if index==1
              if L==3
-                 Rgb_image(i,j,1)=log((image(i,j,1))+1);
-                 Rgb_image(i,j,2)=log((image(i,j,2))+1);
-                 Rgb_image(i,j,3)=log((image(i,j,3))+1);
+                 Rgb_image(i,j,1)=c*log((image(i,j,1))+1);
+                 Rgb_image(i,j,2)=c*log((image(i,j,2))+1);
+                 Rgb_image(i,j,3)=c*log((image(i,j,3))+1);
              else
-                 Gray_image(i,j) =log((imagdy(i,j))+1);
+                 Gray_image(i,j) =c*log((image(i,j))+1);
              end
          end
          if index==2
